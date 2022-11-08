@@ -1,0 +1,119 @@
+/* Regrais gerais */
+* { box-sizing: border-box;}
+
+@font-face {
+    font-family: Script;
+    src: url(fonts/scriptwrite.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #00ffff;
+}
+
+/* Principal */
+.main {
+    height: 955px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control {
+    max-width: 680px;
+}
+
+.botaoenviar {
+    max-width: 120px;
+    margin: 10px auto;
+}
+
+input {
+    margin: 5px 0 5px 20px;
+    border-radius: 90px;
+    color: rgb(117, 28, 28);
+    box-shadow: 4px 4px 4px 4px #000000;
+}
+
+.back-button-group {
+    position: absolute;
+    top: 10px;
+    left: -45px;
+}
+
+/* Responsividade da main page */
+@media only screen and (max-width: 430px) {
+    .main {
+        align-items: baseline;
+        margin-top: 80px;
+        font-size: 12px;
+        height: auto;
+        font-size: 15px;
+    }
+    .sb1 {
+        display: flex;
+        width: 250px;
+        margin: 10px auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sb1 input {
+        width: 200px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+    .main {
+        align-items: baseline;
+        margin-top: 80px;
+    }
+}
+
+
+/* Detalhes */
+h1, p {
+    text-align: center;
+}
+
+.botaoenviar input { 
+    width: 100px;
+    cursor: pointer; 
+}
+
+.botaoenviar input:hover {
+    border: #ff0000 2px double;
+    transition: ease-out 1s;
+    color: #fff;
+    background: #4747e7;;
+}
+
+
+.back-button-group input {
+    background-color: rgb(50, 50, 130);
+    color: rgb(245, 235, 220 );
+    border: 1px hsla(10, 80%, 35%, 1) outset;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Script;
+}
+.back-button-group input:hover {
+    width: 230px;
+    height: 70px;
+    transition: linear 0.4s;
+}
+.return-icon {
+  position: relative;
+  top: 18px;
+  left: 80px;
+}
+.back-button-group img {
+    width: 50px;
+    height: 40px;
+}
+
+    

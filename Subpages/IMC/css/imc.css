@@ -1,0 +1,13 @@
+body {
+    background-color: #1b1b1b;
+}
+
+.resultados p:nth-child(2) {
+    height: 46px;
+    line-height: 42px;
+    color: #fff;
+}
+
+.resultados p:last-of-type {
+    color: #ff0000;
+}

@@ -1,0 +1,67 @@
+body {
+    background-color: #96732d;
+    font: 1.25em Script;
+}
+
+input { 
+    font-family: Script;
+    font-size: 0.8em;
+}
+@font-face {
+    font-family: Script;
+    src: url(../../Content/fonts/scriptwrite.ttf);
+}
+.main {
+    background-image: url('../assets/bakground-image.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center; 
+    background-position-y: 20px;
+
+    height: 1000px;
+}
+.header-title span {
+    color: #4747e7;
+}
+.control {
+    transform: translateY(-20%);
+}
+
+.pencil-icon {
+    position: relative;
+    top: 33px;
+    left: 18px;
+}
+
+.resultados {
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+.resultados p:first-of-type {
+    background: none;
+    color: rgba(255, 150, 20, 1);
+    font-size: 0.9em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        font-size: 18px;
+    }
+    .main {
+        height: 700px;
+    }
+    .control {
+        transform: translateY(0%);
+    }
+    .pencil-icon {
+        display: none;
+    }
+    .botaoenviar input:hover {
+        transition: none;
+        border: none;
+        color: #fff;
+        background: #ccc;
+    }
+}

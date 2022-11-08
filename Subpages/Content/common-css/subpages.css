@@ -1,0 +1,55 @@
+/* Regrais gerais */
+* { box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #00ffff;
+}
+
+/* Principal */
+.main {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control {
+    max-width: 680px;
+}
+
+.botaoenviar {
+    max-width: 120px;
+    margin: 10px auto;
+}
+
+input {
+    margin: 5px 0 5px 20px;
+    border-radius: 5px;
+    color: rgb(117, 28, 28);
+    box-shadow: 4px 4px 4px 4px #000;
+}
+@media screen and (max-width: 350px) {
+    .form {
+        margin: 0 20% 0 20%;
+    }
+}
+/* Detalhes */
+h1, p {
+    text-align: center;
+}
+
+.botaoenviar input { 
+    width: 100px;
+    height: 28px;
+    cursor: pointer; 
+}
+
+.botaoenviar input:hover {
+    transition: ease-out 1s;
+    background-color: rgb(180, 180, 180);
+    width: 96px;
+    box-shadow: 2px 2px 2px 2px #000;
+    color: #444;
+}
