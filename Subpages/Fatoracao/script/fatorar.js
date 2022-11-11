@@ -36,6 +36,6 @@ document.querySelector(".calcButton").addEventListener('click', () => {
         }
     }
     else {
-        alert("Informe o número bobão")
+        alert("Por favor, informe um número para continuar")
     }
 })
