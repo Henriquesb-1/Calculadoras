@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="Conversor de temperaturas">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="../Content/common-css/menu-pages.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/common-css/subpages.css" />
+    <link rel="stylesheet" type="text/css" href="css/temperatura.css" />
+    <script type="text/javascript" src="../Content/common-script/includes.js" defer ></script>
+    <script src="../Content/jQuery/jquery-3.6.1.min.js"> </script>
+    <script src="script/temperaturas.js" type="text/javascript" defer> </script>
+    <link rel="shortcut icon" type="imagex/png" href="assets/temp_icon.ico">
+    <title> Conversor de Temperatura </title>
+</head>
+
+<body class="back">
+    <header>
+        <div class="header-container">
+            <div class="all-pages-container" include="../Content/common-html/pages-nav.html"></div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="main">
+            <div class="control">
+                <div class="main-container tamanho">
+                    <div class="header-title">
+                        <h1>
+                            <span>
+                                Conversor de Temperatura
+                            </span>
+                        </h1>
+                    </div>
+
+                    <div class="header-description tamanho">
+                        <p>
+                            Qual temperatura deseja converter?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="form tamanho">
+                    <div class="valor sb1">
+                        <select id="select-temp" name="temp">
+                            <option value="fahrenheit"> Fahrenheit </option>
+                            <option value="kelvins"> Celsius </option>
+                            <option value="celsius"> Kelvins </option>
+                        </select>
+                    </div>
+
+                    <div class="entrada1 sb1">
+                        <div>
+                            <label for="valor_entrada"> Quantos graus? </label>
+                        </div>
+                        <div>
+                            <input type="number" id="valor-entrada" class="to-convert" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="botaoenviar tamanho">
+                    <input type="button" value="Calcular" class="calcButton" />
+                </div>
+
+                <div class="resultados tamanho">
+                    <p class="erro"> </p>
+                    <h3 class="temp-title1"> </h3>
+                    <p class="formula1"> </p>
+                    <p class="temp1"> </p>
+
+                    <h3 class="temp-title2"> </h3>
+                    <p class="formula2"> </p>
+                    <p class="temp2"> </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

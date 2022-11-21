@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description" content="Simulação de Financiamento. Quer descobrir quanto você tem que desembolsar por um mês para poder ter aquele carrão? Então vamos nessa">
+        <meta name="author" content="Henrique">
+        <meta name="robots" content="index, follow">
+        <link rel="stylesheet" type="text/css" href="css/conversor_moedas.css" />
+        <link rel="stylesheet" type="text/css" href="../Content/common-css/menu-pages.css" />
+        <link rel="stylesheet" type="text/css" href="../Content/common-css/subpages.css" />
+        <link rel="shortcut icon" type="imagex/png" href="assets/conver-icon.ico" >
+        <script src="../Content/jQuery/jquery-3.6.1.min.js"></script>
+        <script src="script/conversor.js" type="text/javascript" defer></script>
+        <script type="text/javascript" src="../Content/common-script/includes.js" defer ></script>
+        <title> Conversor de Moeda </title>
+
+        <body>
+            <header>
+                <div class="header-container">
+                    <div class="all-pages-container" include="../Content/common-html/pages-nav.html"></div>
+                </div>
+            </header>
+            <main>
+                <div class="main">
+                    <div class="control">
+                        <div class="main-container tamanho">
+                            <div class="header-title">
+                                <h1>
+                                   Conversor de Moedas 
+                                </h1>
+                            </div>
+    
+                            <div class="header-description tamanho">
+                                <p>
+                                    
+                                </p>
+                            </div> 
+                        </div>
+                        
+                        <div class="form tamanho">
+                            <div class="valor1">
+                                <label for="valor"> Qual o valor que deseja converter? </label>
+                                <input type="number" name="valor" class="valor" placeholder="Ex: 999,99">
+                            </div>
+
+                            <div class="convert-display">
+                                <div class="value">
+                                    <h3> De: </h3>
+                                    <select id="moeda1">
+                                        <option value="0"> R$ - Real</option>
+                                        <option> $ - Dólar </option>
+                                        <option> € - Euro </option>
+                                    </select>
+                                </div>
+
+                                <div class="value">
+                                    <h3> Para: </h3>
+                                    <select id="moeda2">
+                                        <option value="0"> R$ - Real</option>
+                                        <option> $ - Dólar </option>
+                                        <option> € - Euro </option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="botaoenviar tamanho">
+                                <input type="button" value="Converter" class="calcbutton">
+                            </div>
+                        </div>
+    
+                        <div class="resultados tamanho">
+                            <p class="erro"> </p>
+                            <p class="convertido"> </p>
+                            <p class="aviso"> </p>
+                        </div>  
+                    </div>
+                </div>
+            </main>
+        </body>

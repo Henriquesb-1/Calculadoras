@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Calculadora para calcular expressões usando a fórmula de Bhaskará">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Henrique">
+        <link rel="stylesheet" type="text/css" href="../Content/common-css/menu-pages.css" />
+        <link rel="stylesheet" type="text/css" href="../Content/common-css/subpages.css" />
+        <link rel="stylesheet" type="text/css" href="css/fatoracao.css" />
+        <script src="../Content/jQuery/jquery-3.6.1.min.js"></script>
+        <script type="text/javascript" src="../Content/common-script/includes.js" defer ></script>
+        <script src="../Content/jQuery/jquery-3.6.1.min.js" defer></script>
+        <title> Fatoração numérica </title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="all-pages-container" include="../Content/common-html/pages-nav.html"></div>
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <div class="control">
+                    <div class="main-container tamanho">
+                        <div class="header-title">
+                            <h1>
+                                <span>
+                                    Fatoração numérica
+                                </span>
+                            </h1>
+                        </div>
+
+                        <div class="header-description tamanho">
+                            <p>
+                                Precisa fatorar um número? <br>
+                                Basta informar o número e fazemos o resto
+                            </p>
+                        </div>
+
+                        <form>
+                            <div class="form tamanho tabDisplay">
+                                <div class="valorFatorar sb1">
+                                    <label for="NumeroAFatorar"> Digite o valor a ser fatorado: </label>
+                                    <input type="number" class="valorRecibido" />
+                                </div>
+                            </div>
+
+                            <div class="botaoenviar tamanho">
+                                <input type="button" class="calcButton" value="Fatorar">
+                            </div> 
+                        </form>
+
+                        <div class="resultados tamanho">
+                            <p class="numeroEscolhido"> </p>
+                            <table class="table">
+                                <thead class="tableTitle">
+                                    <tr>
+                                        <th>Numero</th>
+                                        <th>Divido por</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tableBody">
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="resumo"> </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script type="text/javascript" src="script/fatorar.js"> </script>
+    </body>
+</html>
